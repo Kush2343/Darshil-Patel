@@ -8,7 +8,7 @@ import About from './Components/About/About';
 import Resume from './Components/Resume/Resume';
 import Project from './Components/Project/Project';
 import Conatct from './Components/Conatact/Conatct';
-import Header from './Components/Navbar/Navber';
+import Header from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 
 function App() {
