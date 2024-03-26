@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Tenor Sans';
+  font-weight: 400;
+}
+
+.bg
+{
+  background-image:url('./Images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+:root
+{
+  --main-color:#038bff;
+  --bg-color:#F6F6F6;
+  --component-color:#d6e4f0;
+  --text-color:rgb(44, 44, 44);
+  --after-color: var(--text-color),var(--component-color), var(--main-color);
+}
+
+.shadow-white {
+  filter: drop-shadow(0px 0px 20px var(--main-color));
+}
+
+.after-effect:after {
+  --tw-translate-y: -50%;
+  --tw-content: "";
+  background-image: linear-gradient(to right, var(--after-color));
+  border-radius: 0.375rem;
+  content: var(--tw-content);
+  height: 0.125rem;
+  position: absolute;
+  top: 50%;
+  width:12rem;
+}
+
+.after-effect {
+  position: relative;
+}
+.ReactModal__Overlay {
+  background:rgb(4 4 4 / 71%) !important;
+}
+@media only screen and (max-width: 600px) {
+ .after-effect::after
+ {
+  display: none;
+ }
+}
