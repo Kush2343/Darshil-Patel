@@ -3,7 +3,10 @@ import ether from '../Images/ethermax.jpg';
 import skill from '../Images/skillup.jpg';
 import digistram from '../Images/digistream.jpg';
 import opinion from '../Images/opinion.jpg';
-import Img from '../Images/bgres.jpg'
+import nft from '../Images/nft.jpg';
+import meditracker from '../Images/meditracker.jpeg'
+import ecom1 from '../Images/e-com1.png';
+import ecom2 from '../Images/e-com2.png';
 
 const ProjectData =
 [
@@ -12,7 +15,7 @@ const ProjectData =
         name:"NFT Marketplace",
         detail:"Inferenz Tech Private limited, Ahmedabad, India ",
         description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, culpa reprehenderit odio consequatur quibusdam, facilis aliquam libero animi at aperiam voluptatibus sit, dignissimos itaque provident. Ex, dolore quibusdam? Deserunt,",
-        img:Img,
+        img:nft,
         website:"www.infolanze.com",
 
     },
@@ -21,7 +24,7 @@ const ProjectData =
         name:"Medi-Tracker",
         detail:"Inferenz Tech Private Limited, Ahmedabad, India",
         description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, culpa reprehenderit odio consequatur quibusdam, facilis aliquam libero animi at aperiam voluptatibus sit, dignissimos itaque provident. Ex, dolore quibusdam? Deserunt,",
-        img:Img,
+        img:meditracker,
         website:"www.infolanze.com",
     },
     {
@@ -62,6 +65,22 @@ const ProjectData =
         detail:"",
         description:"The Opinion Poll System on the blockchain serves as a sophisticated and decentralized mechanism for the evaluation of professors within institutions. This innovative solution leverages blockchain technology to enhance transparency, security, and reliability in the assessment process The system encompasses three pivotal user roles: Admin, Professors, and Students, ensuring a seamless and accountable",
         img:opinion,
+        website:"www.infolanze.com",
+    },
+    {
+        id:"8",
+        name:"E-commerce Site",
+        detail:"",
+        description:"",
+        img:ecom1,
+        website:"www.infolanze.com",
+    },
+    {
+        id:"9",
+        name:"E-commerce Site Audio",
+        detail:"",
+        description:"",
+        img:ecom2,
         website:"www.infolanze.com",
     },
 ];

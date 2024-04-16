@@ -133,9 +133,9 @@ function Resume() {
           <div className="bg-[--component-color] py-12 px-4 sm:px-5 md:px-10 lg:px-14 rounded-none md:rounded-xl">
             <div className="grid grid-cols-1  md:grid-cols-2 gap-8">
               <div className=" col-span-1">
-                <h4 className="text-5xl dark:text-white font-medium mb-6">
+                <h4 className="text-3xl text-white font-medium mb-6 sm:text-3xl md:text-4xl">
                   TECHNICAL SKILLS
-                </h4>
+                </h4> 
                 {/* skill bar */}
                 <div class=" mb-7">
                   <div class="flex justify-between py-1">
@@ -203,6 +203,42 @@ function Resume() {
  L 99.5,0.5"
                       stroke-linecap="round"
                       stroke="#f97316"
+                      stroke-width="1"
+                      fill-opacity="0"
+                    ></path>
+                  </svg>
+                </div>
+                {/* skill bar */}
+                {/* skill bar */}
+                <div class=" mb-7">
+                  <div class="flex justify-between py-1">
+                    <span class=" text-base font-semibold dark:text-[#A6A6A6]">
+                      Blockchain Devlopment
+                    </span>
+                    <span class=" text-base font-semibold pr-5 dark:text-[#A6A6A6]">
+                      100%
+                    </span>
+                  </div>
+                  <svg
+                    class="rc-progress-line"
+                    viewBox="0 0 100 1"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      class="rc-progress-line-trail"
+                      d="M 0.5,0.5
+ L 99.5,0.5"
+                      stroke-linecap="round"
+                      stroke="#EDF2F2"
+                      stroke-width="1"
+                      fill-opacity="0"
+                    ></path>
+                    <path
+                      class="rc-progress-line-path"
+                      d="M 0.5,0.5
+ L 99.5,0.5"
+                      stroke-linecap="round"
+                      stroke="#4ade80"
                       stroke-width="1"
                       fill-opacity="0"
                     ></path>
@@ -285,11 +321,13 @@ function Resume() {
                 {/* skill bar */}
               </div>
               <div className=" col-span-1">
-                <h4 className="text-5xl dark:text-white font-medium mb-6">
+                <h4 className="text-3xl text-white font-medium mb-6 sm:text-3xl md:text-4xl">
                   Knowledges
                 </h4>
-                {/* knowledge */}
-                <div className="grid grid-cols-2 gap-2 lg:grid-cols-3">
+                <div className="bg-[--bg-color] py-5 rounded-xl gap-2 grid col-span-1">
+  <div className="px-5">
+    <h5 className="text-[--main-color]">Full Stack</h5>
+    <div className="grid grid-cols-2 gap-2 lg:grid-cols-3">
                   <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
                     <FaHtml5 className="mr-1 text-orange-500" />
                     HTML
@@ -316,20 +354,15 @@ function Resume() {
                   </div>
 
                   <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
-                    <SiCplusplus className="mr-1 text-blue-600" />C & C++
-                  </div>
-
-                  <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
-                    <FaJava className="mr-1 text-red-400" />
-                    JAVA
-                  </div>
-
-                  <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
                     <FaPython className="mr-1 text-blue-500" />
                     Python
                   </div>
-
-                  <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
+                </div>
+    </div>
+    <div className="px-5">
+    <h5 className="text-[--main-color]">Full Stack</h5>
+    <div className="grid grid-cols-2 gap-2 lg:grid-cols-3">
+    <div class="bg-[--bg-color] flex items-center w-28 lg:w-36 text-xs lg:text-base px-1 py-2 rounded-lg">
                     <FaGolang className="mr-1 text-cyan-400" />
                     Golang
                   </div>
@@ -353,7 +386,9 @@ function Resume() {
                     <FaDatabase className="mr-1 text-gray-400" />
                     CouchDB
                   </div>
-                </div>
+                  </div>
+    </div>
+</div>
               </div>
             </div>
           </div>
