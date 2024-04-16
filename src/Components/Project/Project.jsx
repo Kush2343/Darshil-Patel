@@ -53,7 +53,7 @@ function Project() {
           onRequestClose={() => setIsOpen(false)}
           className="outline-none flex items-center rounded-2xl"
         >
-          <div className=" w-full  md:w-10/12 flex items-center   lg:w-[850px] bg-[--bg-color] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg my-10">
+          <div className=" w-full  md:w-10/12 flex items-center   lg:w-[800px] bg-[--bg-color] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg my-10">
             <button
               onClick={closeModal}
               className=" text-2xl text-[--main-color] focus:outline-none text-right absolute top-4 right-4 cursor-pointer"
@@ -77,8 +77,8 @@ function Project() {
             <h2 className="text-[--main-color]">{ProjectsDetails.name}</h2>
             <a href="#">{ProjectsDetails.website}</a>
             <p>{ProjectsDetails.detail}</p>
-            <div className="lg:h-[400px] md:h-80 h-36 sm:h-40 p-[50px]">
-            <img src={ProjectsDetails.img} alt={ProjectsDetails.name} className="h-[100%] border border-[--main-color] w-[100%] object-cover object-center" />
+            <div className="lg:h-[500px] md:h-80 h-36 sm:h-40 p-[50px]">
+            <img src={ProjectsDetails.img} alt={ProjectsDetails.name} className="h-[100%] border border-[--main-color] w-[100%] object-cover object-center object-fill" />
             </div>
             <p>{ProjectsDetails.description}</p>
         </div>

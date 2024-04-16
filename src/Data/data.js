@@ -7,6 +7,7 @@ import nft from '../Images/nft.jpg';
 import meditracker from '../Images/meditracker.jpeg'
 import ecom1 from '../Images/e-com1.png';
 import ecom2 from '../Images/e-com2.png';
+import lead from '../Images/leadhunter.png';
 
 const ProjectData =
 [
@@ -81,6 +82,14 @@ const ProjectData =
         detail:"",
         description:"",
         img:ecom2,
+        website:"www.infolanze.com",
+    },
+    {
+        id:"10",
+        name:"Lead Hunter",
+        detail:"",
+        description:"",
+        img:lead,
         website:"www.infolanze.com",
     },
 ];
