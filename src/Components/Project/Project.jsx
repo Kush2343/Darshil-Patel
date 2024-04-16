@@ -33,10 +33,10 @@ function Project() {
                 className="p-5 bg-[--component-color] rounded-lg"
                 onClick={() => openModal(project)}
               >
-                <div className="lg:h-60 md:h-52 h-36 sm:h-40">
+                <div className="lg:h-[250px] md:h-45 h-35 sm:h-40">
                   <img
                     src={project.img}
-                    className="h-[100%] w-[100%] rounded-t-xl object-cover object-center"
+                    className="h-[100%] w-[100%] rounded-t-xl object-fill object-center"
                     alt={project.name}
                   />
                 </div>
