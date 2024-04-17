@@ -29,7 +29,7 @@ function Project() {
             {ProjectData.map((project) => (
               <div
                 key={project.id}
-                className="p-5 bg-[--component-color] rounded-lg"
+                className="p-4 bg-[--component-color] rounded-2xl"
                 onClick={() => openModal(project)}
               >
                 <div className="lg:h-[250px] md:h-45 h-35 sm:h-40">

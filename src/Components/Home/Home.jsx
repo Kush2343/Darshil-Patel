@@ -13,7 +13,7 @@ function Home() {
     <div className='flex flex-col items-center  justify-center bg-[--bg-color] py-10 px-10 rounded-2xl' data-aos='fade'>
       <img className='w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[250px] md:h-[250px] lg:w-[280px] lg:h-[280px] 2xl:w-[300px] 2xl:h-[300px] rounded-3xl bg-slate-400 border-4 border-[--main-color] object-cover object-top shadow-white'src={Profile} />
       <h3 className='text-[--main-color] pt-5 pb-3 font-bold text-2xl'>Darshil Patel</h3>
-      <p className='text-[--text-color]'>Blockchain Developer</p>
+      <p className='text-[--main-color]'>Blockchain Developer</p>
       <div className="flex space-x-3 pt-4">
   <Link to="#" target="_blank" rel="noopener noreferrer">
     <div className="w-10 h-10 bg-black shadow-sm p-2 rounded-xl hover:bg-white transition-all duration-300 ease-in-out cursor-pointer">
