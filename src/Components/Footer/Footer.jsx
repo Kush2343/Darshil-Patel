@@ -14,9 +14,9 @@ function Footer() {
           <h1 className="text-[--main-color] text-2xl font-extrabold pb-5">
             Darshil Patel
           </h1>
-<p className="text-wrap w-full text-[--text-color] text-base">Proficient in designing and developing blockchain applications on Hyperledger Fabric and Ethereum platforms. Skilled in implementing smart contracts and decentralized applications using Solidity.</p>
+<p className="text-wrap w-full text-[--text-color] text-base text-justify sm:pr-10">a versatile full-stack developer, adept in frontend and backend technologies like React JS and Node.js. With expertise in Python, Java, and Solidity, he leads teams effectively, delivering impactful products with a commitment to excellence and continuous learning.</p>
         </div>
-        <div className="col-span-4">
+        <div className="col-span-3">
           <div className="space-y-3">
             <Link to="#" target="_blank" rel="noopener noreferrer" className="flex">
               <div className="w-8 h-8 bg-black shadow-sm p-1 rounded-lg hover:bg-white transition-all duration-300 ease-in-out cursor-pointer">
@@ -54,7 +54,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-4">
           <div class="flex gap-5">
             <span class="w-8 mt-2">
             <IoMdMail  className="text-2xl w-10 h-10 text-[--main-color]" />
