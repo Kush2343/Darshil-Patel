@@ -5,8 +5,7 @@ import ProjectData from "../../Data/data";
 import { MdClose } from "react-icons/md";
 
 function Project() {
-  const [isOpen, setIsOpen] = useState(false);
-  // const [selectedProject, setSelectedProject] = useState(null);
+  const [isOpen, setIsOpen] = useState();
   const [ProjectsDetails, SetProjectDetails] = useState(null);
 
   const openModal = (details) => {
@@ -26,7 +25,7 @@ function Project() {
           <h2 className="text-[--main-color] text-center md:text-left py-5 text-2xl  lg:text-4xl after-effect after:left-40">
             Projects
           </h2>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3">
             {ProjectData.map((project) => (
               <div
                 key={project.id}
@@ -53,19 +52,18 @@ function Project() {
           onRequestClose={() => setIsOpen(false)}
           className="outline-none flex items-center rounded-2xl"
         >
-          <div className=" w-full  md:w-10/12 flex items-center   lg:w-[800px] bg-[--bg-color] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg my-10">
+          <div className="w-[300px] md:w-80 flex items-center   lg:w-[550px] bg-[--bg-color] rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg my-10">
             <button
               onClick={closeModal}
               className=" text-2xl text-[--main-color] focus:outline-none text-right absolute top-4 right-4 cursor-pointer"
             >
               <MdClose />
             </button>
-            <div className="">
             {ProjectsDetails && (
     Array.isArray(ProjectsDetails.description) ? (
         <div>
             <h2 className="text-[--main-color]">{ProjectsDetails.name}</h2>
-            <a href="#">{ProjectsDetails.website}</a>
+            <a href={ProjectsDetails.website} target="_blank" className="text-[12px]">{ProjectsDetails.website}</a>
             <p>{ProjectsDetails.detail}</p>
             <img src={ProjectsDetails.image} alt={ProjectsDetails.name} />
             {ProjectsDetails.description.map((paragraph, index) => (
@@ -75,16 +73,15 @@ function Project() {
     ) : (
         <div>
             <h2 className="text-[--main-color]">{ProjectsDetails.name}</h2>
-            <a href="#">{ProjectsDetails.website}</a>
-            <p>{ProjectsDetails.detail}</p>
-            <div className="lg:h-[500px] md:h-80 h-36 sm:h-40 p-[50px]">
+            <a href={ProjectsDetails.website} target="_blank" className="text-[12px]">{ProjectsDetails.website}</a>
+            <p className="text-[12px]">{ProjectsDetails.detail}</p>
+            <div className="lg:h-[320px] md:h-72 sm:h-40 h-[200px] md:p-[30px] p-3">
             <img src={ProjectsDetails.img} alt={ProjectsDetails.name} className="h-[100%] border border-[--main-color] w-[100%] object-cover object-center object-fill" />
             </div>
-            <p>{ProjectsDetails.description}</p>
+            <p className="text-[12px]">{ProjectsDetails.description}</p>
         </div>
     )
 )}
-            </div>
           </div>
         </Modal>
       </section>

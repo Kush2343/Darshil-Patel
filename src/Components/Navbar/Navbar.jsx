@@ -8,7 +8,7 @@ import { FaAddressBook } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 
-function Header({setisOpen}) {
+function Header() {
   const [menuOpen, setMenuOpen] = useState();
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -30,7 +30,7 @@ function Header({setisOpen}) {
   }, []);
 
   return (
-<header className={`flex justify-between items-center sticky z-50 top-0 left-0 w-full lg:sticky lg:z-50 lg:px-20 ${isScrolling ? 'backdrop-blur-lg lg:py-3 transition-all duration-500 ease-in-out' : 'lg:py-9 transition-all duration-500 ease-in-out'}`}>
+<header className={`flex justify-between items-center sticky z-50 top-0 left-0 w-full lg:sticky lg:px-10 xl:px-20 ${isScrolling ? 'backdrop-blur-lg lg:py-3 transition-all duration-500 ease-in-out' : 'lg:py-9 transition-all duration-500 ease-in-out'}`}>
 <div className=" flex justify-between w-full px-4 bg-black lg:bg-transparent lg:px-0 py-3 lg:py-0">
         <div className="flex justify-between w-full items-center space-x-4">
           <h1 className='text-4xl text-[--bg-color] font-extrabold'>Darshil Patel</h1>
